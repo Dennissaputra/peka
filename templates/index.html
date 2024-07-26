@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Peka.in</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/static/images/logoPeka3.png">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/vendor/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./static/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/vendor/css/">
+</head>
+
+<body>        
+    <div class="background1">
+    <!-- navbar -->
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light navigasi">
+            <a href="/"><img src="{{url_for('static', filename='images/logoPeka3.png')}}" href="/" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/detection">Deteksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dictionary">Kamus</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- Deskripsi -->
+    <div class="container  deskripsi">
+        <div class="row d-flex">
+            <div class="col-sm-6">
+                <!-- Deskripsi Aplikasi -->
+                <img src="{{url_for('static', filename='images/logojudul.svg')}}" width="500px" class="img-responsive  img-fluid">
+                <p class="text-justify my-auto">
+                    WebApp Peka.in Ini adalah platform inovatif yang menggabungkan keajaiban bahasa dan kekuatan gambar untuk memfasilitasi komunikasi yang lebih kaya dan ekspresif. Dengan WebApp ini, Anda dapat menggambarkan ide, konsep, dan cerita dengan menggunakan ilustrasi
+                    yang menarik dan memikat.
+                </p>
+                <!-- <img src="{{url_for('static', filename='images/bg.svg')}}" class="my-3"> -->
+                <br>
+                <a href="/detection"><button type="button" class="btn btn-start"><p>Mulai</p></button></a>
+            </div>
+            <div class="col-sm-6 align-self-center ">
+                <!-- Gambar Deskripsi Aplikasi -->
+                <img src="{{url_for('static', filename='images/anggota/hero.png')}}" class="img-fluid " width="900 "></img>
+            </div>
+        </div>
+    </div>
+    <!-- akhir deksripsi -->
+
+
+    <!--Fitur fitur  -->
+    <div class="container fitur text-center">
+        <h2 class="font-weight-bold ">Fitur -<span class="warna">Fitur</span></h2>
+        <div class=" row margin">
+            <div class="col-6 col-md-6">
+                    <a href="/dictionary"><img src="{{url_for('static', filename='images/fitur1.png')}}" class="img-fluid img-responsive" width="450px "></a>
+                    <div  class="body">
+                        <p>Kamus <span class="warna ">Bahasa Isyarat</span> </p>
+                    </div>
+            </div>
+            <div class="col-6 col-md-6">                 
+                    <a href="/detection"><img src="{{url_for('static', filename='images/fitur2.png')}}" class="img-fluid img-responsive" width="450px"></a>
+                    <div class="body">
+                        <p>Deteksi <span class="warna ">Bahasa Isyarat</span></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhir fitur -->
+
+      <!-- footer -->
+    <footer class="bg-dark text-white d-flex">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="p-3">
+                        ©2023 Copyright:
+                        <a class="text-white" href="/">Peka<span class="warna">.in</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-2 ">
+                        <a href="https://github.com/Dennissaputra/PA_Peka"><i class="fa fa-brands fa-github fa-2x mx-2"></i></a>
+                        <a href="https://universe.roboflow.com/ngulangterossssss/projek_akhir/"><i class="fa sfa-solid fa-database fa-2x mx-2"></i></a>
+                        <a href=""><i class="fa fa-brands fa-youtube fa-2x mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+</div>
+
+
+    <!--All Script-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+    <script src="{{ url_for('static', filename='vendor/js/bootstrap.js') }}"></script>
+    
+
+</html>

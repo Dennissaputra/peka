@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom right, #061431 0%, #4e6ba4 200%);
+}
+
+.background {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  margin-bottom: -110%;
+  z-index: -1;
+}
+
+.background1 {
+  background-image: url("/static/images/bg.svg");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-position: 0 -340px;
+}
+
+.warna {
+  color: #ff2e00;
+}
+
+.navigasi {
+  backdrop-filter: blur(10px);
+}
+
+.nav-item a {
+  background-image: linear-gradient(
+    to right,
+    #ff2e00,
+    #ff2e00 50%,
+    #ffffff 50%
+  );
+  font-weight: 600;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse a:before {
+  content: "";
+  background: #ff2e00;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse a:hover {
+  background-position: 0;
+}
+
+.collapse a:hover::before {
+  width: 100%;
+}
+
+.collapse a.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: none;
+  border-radius: 100%;
+  background-color: #ff2e00;
+  z-index: 1;
+}
+
+.judul {
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.deskripsi {
+  padding-top: 110px;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.btn-start {
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 100px;
+  background-color: #ff2e00;
+}
+
+.btn-start p {
+  font-weight: 500;
+  color: white;
+  font-size: 25px;
+}
+
+.margin {
+  padding: 40px 30px;
+}
+
+.fitur {
+  font-size: 25px;
+  font-weight: 500;
+  height: 80vh;
+  justify-content: center;
+}
+
+/* aboutus */
+.aboutus {
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.team {
+  padding-bottom: 40px;
+}
+
+.polaroid img {
+  width: 250px;
+  height: 300px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.polaroid h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.polaroid p {
+  font-size: 15px;
+}
+
+.image-anggota {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+/* akhir about us */
+
+/* dictonary */
+.dictionary {
+  padding: 110px 100px;
+}
+
+.search_section {
+  padding-top: 20px;
+}
+
+.search_section input {
+  font-size: 30px;
+  color: #061431;
+  border-radius: 30px;
+}
+
+.text-kamus {
+  font-weight: 600;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 280px;
+  background-color: #926e58;
+  padding: 10 0;
+}
+
+.no-kamus {
+  padding-top: 150px;
+  display: none;
+  height: 40vh;
+}
+/* akhir dictonary */
+
+/* deteksi */
+.scan {
+  height: 120vh;
+  padding-top: 110px;
+}
+
+.scan .webcam-container {
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+  background-color: #393939;
+  margin: 20px;
+}
+
+.tombol {
+  font-size: 20px !important;
+}
+
+#body {
+  position: relative;
+}
+
+#body video {
+  transition: filter 250ms linear;
+}
+
+#body.loading video {
+  filter: grayscale(1) brightness(0.25);
+}
+
+#body.loading:before {
+  content: "Loading Model...";
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 100;
+}
+
+canvas {
+  position: absolute;
+  z-index: 9999;
+}
+
+video,
+canvas {
+  width: 100%;
+  /* margin: 0 50px 0 50px; */
+}
+
+#fps {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#fps:empty {
+  display: none;
+}
+
+#fps:after {
+  content: " fps";
+}
+
+/* akhir deteksi */
+
+/* footer */
+.footer {
+  font-size: 30px;
+  background-color: #292929;
+}
+
+.logo {
+  float: right;
+}
+/* akhit footer */
+
+/* responsive */
+@media screen and (max-width: 990px) {
+  .navigasi {
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-nav a {
+    color: #ff2e00;
+  }
+
+  .deskripsi {
+    height: 70vh;
+  }
+
+  .fitur {
+    height: 50vh;
+    font-size: 20px;
+  }
+
+  /* deteksi */
+  .scan {
+    padding: 200px;
+    height: 100vh;
+  }
+  .webcam-container {
+    width: 640px;
+    height: 410px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  /* aboutus */
+  .aboutus {
+    height: 90vh;
+  }
+
+  /* dictionary */
+
+  .text-kamus {
+    font-size: 20px;
+    height: 30px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* home */
+  .navigasi {
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-nav a {
+    color: #ff2e00;
+  }
+
+  .deskripsi {
+    padding-top: 60px;
+    font-size: 15px;
+    height: 100vh;
+  }
+
+  .fitur {
+    padding-top: 60px;
+    height: 50vh;
+  }
+
+  .fitur p {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    color: black !important;
+  }
+
+  /* deteksi */
+  .scan {
+    padding: 50%;
+    height: 90vh;
+  }
+
+  .scan .webcam-container {
+    width: 290px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  #body.loading:before {
+    width: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 100;
+  }
+
+  canvas {
+    position: absolute;
+    z-index: 9999;
+  }
+
+  video,
+  canvas {
+    width: 100%;
+    /* margin: 0 50px 0 50px; */
+  }
+
+  /* aboutus */
+  .aboutus {
+    height: 110vh;
+    font-size: 14px;
+  }
+
+  .team h4 {
+    font-size: 16px;
+  }
+
+  .team p {
+    font-size: 12px;
+  }
+
+  .aboutus img {
+    width: 200px;
+  }
+
+  /* dictionary */
+  .dictionary h2 {
+    font-size: 30px;
+  }
+
+  .search_section input {
+    font-size: 25px;
+  }
+
+  .text-kamus {
+    height: 30px;
+    width: 150px;
+  }
+
+  /* footer */
+  footer {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .logo {
+    float: none;
+  }
+}

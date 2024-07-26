@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Peka.in</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/static/images/logoPeka3.png">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/vendor/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./static/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/vendor/css/">
+</head>
+
+<body>        
+    <div class="background1">
+    <!-- navbar -->
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light navigasi">
+            <a href="/"><img src="{{url_for('static', filename='images/logoPeka3.png')}}" href="/" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/deteksi">Deteksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dictionary">Kamus</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- aboutus text-->
+    <div class="container aboutus">
+        <div>
+            <h2 class="text-center pb-3"><span class="warna">About</span> Us</h2>
+            <img src="{{url_for('static', filename='images/logoPeka3.png')}}" width="300px" class="img-responsive center-block d-block mx-auto">
+             <!-- text -->
+            <p class="text-justify">Aplikasi pendeteksi bahasa isyarat kami adalah sebuah solusi inovatif yang dirancang untuk membantu memfasilitasi komunikasi antara individu yang menggunakan bahasa isyarat dengan mereka yang tidak memahami bahasa isyarat. Aplikasi kami menggunakan teknologi pengenalan gerakan dan gambar untuk mengidentifikasi isyarat tangan dan menerjemahkannya menjadi teks yang dapat dimengerti oleh pengguna lain. Dengan antarmuka yang intuitif dan mudah digunakan, aplikasi ini memberikan kemampuan kepada pengguna untuk dengan cepat dan akurat berkomunikasi menggunakan bahasa isyarat, bahkan dengan mereka yang tidak akrab dengan bahasa ini. Aplikasi juga dilengkapi dengan berbagai fitur tambahan, seperti kamus bahasa isyarat dan tutorial gerakannya untuk membantu pengguna mempelajari dan meningkatkan pemahaman mereka tentang bahasa isyarat.</p>
+            <!-- text -->
+            
+        </div>
+    </div>
+    <!-- aboutus text akhir-->
+    
+    <!-- Tim -->
+    <div class="container team mb-5">
+        <div class="text-center">
+            <h2 class="pb-5">TIM PEKA<span class="warna">.IN</span></h2>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="polaroid">
+                        <img src="{{url_for('static', filename='images/anggota/dennis.JPG')}}" class="polaroid img-responsive mx-auto d-block img-fluid image-anggota">
+                        <h4 class="warna">Dennis Saputra A</h4>
+                        <p>Universitas Muhammadiyah Sukabumi</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="polaroid">
+                        <img src="{{url_for('static', filename='images/anggota/hani.jpeg')}}" class="polaroid img-responsive mx-auto d-block img-fluid image-anggota">
+                        <h4 class="warna">Hani Nur Asri</h4>
+                        <p>Universitas Pendidikan Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="polaroid">
+                        <img src="{{url_for('static', filename='images/anggota/fay.jpg')}}" class="polaroid img-responsive mx-auto d-block img-fluid image-anggota">
+                        <h4 class="warna">Rifan Afiansyah</h4>
+                        <p>Universitas Muhammadiyah Sukabumi</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="polaroid">
+                        <img src="{{url_for('static', filename='images/anggota/am.jpg')}}" class="polaroid img-responsive mx-auto d-block img-fluid image-anggota">
+                        <h4 class="warna">Amanatul Khomisah</h4>
+                        <p>Universitas Negri Semarang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir deksripsi -->
+
+      <!-- footer -->
+    <footer class="bg-dark text-white d-flex">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="p-3">
+                        ©2023 Copyright:
+                        <a class="text-white" href="/">Peka<span class="warna">.in</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-2 ">
+                        <a href="https://github.com/Dennissaputra/PA_Peka"><i class="fa fa-brands fa-github fa-2x mx-2"></i></a>
+                        <a href="https://universe.roboflow.com/ngulangterossssss/projek_akhir/"><i class="fa sfa-solid fa-database fa-2x mx-2"></i></a>
+                        <a href=""><i class="fa fa-brands fa-youtube fa-2x mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+</div>
+
+
+    <!--All Script-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+    <script src="{{ url_for('static', filename='vendor/js/bootstrap.js') }}"></script>
+</body>
+
+</html>
